@@ -2,35 +2,53 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+-> RootLayout : you structure the html document by using the html ans bosu pages
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+-> Within the body tag, you include the naviagtion component, which is imported from the components directory. 
+   this component represents your navigation bar and will be shared across that is displayed consistently throughout your app. 
 
-## Learn More
+-> the children prop is special prop that repsresents the content rendered within the RootLayout component. 
 
-To learn more about Next.js, take a look at the following resources:
+## routing 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-> Routing in NextJs is fundamental concept that determnes how different parts of your application are accessed; When you create a folder inside the app directory in NextJJs, it will be automaticaly becomes a route. Naming the file inside the route folder page.jsx transforms it into a ui route. this mean that it will serve as a regular page with ui components. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+-> on the other hand, if you name the file as route.js it becomes an API route that will be handle API requests and response. 
 
-## Deploy on Vercel
+-> wit APPI routes, you can define custom routes that handle HTTP requests and response, allowing you to fetch or modify data, perform server side or intergrate with external services
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   .NextResponse.json()  : it is import from next/server module. This object provides functions for handling server responses.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## props 
+-> Regular HTML elements have attributes that you can use to pass pieces of information that change the behavior of those elements. For example, changing the src attribute of an <img> element changes the image that is shown. Changing the href attribute of an <a> tag changes the destination of the link.
+
+In the same way, you can pass pieces of information as properties to React components. These are called props
+
+
+## passings Props to a Component
+
+-> React components use props to communicate with each other. Every parent component can pass some information to its child components by giving them props. 
+
+## Familiar props 
+Props are the information that you pass to a JSX tag. For example, className, src, alt, width, and height are some of the props you can pass to an <img>:
+
+--> Don’t miss the pair of { and } curlies inside of ( and ) when declaring props:
+
+## How Props change over time : 
+  
+  Props reflect a component's daa at any point in time rahter than only in the bigginning.
+
+# React components
+
+React components are independent, reusable building blocks in a React application that define what gets displayed on the UI. They accept inputs called props and return React elements describing the UI.
+
+1. server side rendering (SSR)
+
+  -> When to use : 
+
+      . Dynamic Data : Pages that need to display data that changes frequently and must be up-to-date on every request, such as user profile or real time dashboards
+                     this allows the browser to display the content immediately
+      . SEO : Pages that benefits from SEO whhere the content changes based on user interactions or real time data, like products with live inventory# demo_nextJs
