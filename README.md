@@ -52,3 +52,6 @@ React components are independent, reusable building blocks in a React applicatio
       . Dynamic Data : Pages that need to display data that changes frequently and must be up-to-date on every request, such as user profile or real time dashboards
                      this allows the browser to display the content immediately
       . SEO : Pages that benefits from SEO whhere the content changes based on user interactions or real time data, like products with live inventory# demo_nextJs
+
+
+2. if the data is arrays list, you should use useEffect along with useState to fetch data 
