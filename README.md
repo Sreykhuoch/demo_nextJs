@@ -31,8 +31,7 @@ In the same way, you can pass pieces of information as properties to React compo
 ## passings Props to a Component
 
 -> React components use props to communicate with each other. Every parent component can pass some information to its child components by giving them props. 
-
-## Familiar props 
+# Familiar props 
 Props are the information that you pass to a JSX tag. For example, className, src, alt, width, and height are some of the props you can pass to an <img>:
 
 --> Don’t miss the pair of { and } curlies inside of ( and ) when declaring props:
