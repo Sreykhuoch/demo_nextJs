@@ -13,7 +13,15 @@ const Products = async () => {
     <main>
       <div className="text-center p-10">
         <h1 className="font-bold text-4xl mb-4">Fresh Drink</h1>
+        <a
+                  href={"/"}
+                  title="Quicktoolz On Facebook"
+                  className="md:w-32 bg-white tracking-wide text-gray-800 font-bold rounded border-2 border-purple-500 hover:border-purple-500 hover:bg-purple-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center"
+                >
+                  <span className="mx-auto">HomePage</span>
+                </a>
       </div>
+      
 
       <section
         id="Projects"

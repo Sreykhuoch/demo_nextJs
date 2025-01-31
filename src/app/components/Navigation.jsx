@@ -3,32 +3,64 @@ import Link from "next/link";
 import React from "react";
 export const Navigation = () => {
   return (
-    <div className="sticky top-0 backdrop-blur-xl  border-b  z-50">
-      <div className="flex justify-around py-5">
-        <Link href="/">
-          <img
-            src="https://media.istockphoto.com/id/1269843303/vector/happy-family.jpg?s=2048x2048&w=is&k=20&c=k9BrNFUba5fs0G7JS6G9mQEK0aweyaD4ttkSXwSWRt0="
-            alt="Family Guy"
-            width={70}
-            height={50}
-            className="m-10"
-          />
-        </Link>
-        <Link
-          href="/quiz"
-          className="flex items-center justify-center gap-1 px-5 font-semibold text-black transition-colors bg-green-500 rounded-md duration-600 hover:bg-green-600 m-10"
-        >
-          Take a Quiz
-        </Link>
-
-        <Link
-          type="button"
-          href={"/employee"}
-          className="py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
-        >
-          Employee
-        </Link>
+    <>
+      <div className="flex items-center justify-center h-screen bg-gray-200">
+        <div className="container">
+          <div className="bg-white rounded-lg shadow-lg p-5 md:p-20 mx-2">
+            <div className="text-center">
+              <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
+                Quick<span className="text-indigo-600">Toolz</span>
+              </h2>
+              <h3 className="text-xl md:text-3xl mt-10">Coming Soon</h3>
+              <p className="text-md md:text-xl mt-10">
+                <a className="hover:underline" href="#">
+                  Quicktoolz
+                </a>{" "}
+                is a website help you provide simple productivity tools for your
+                daily need online for free.
+              </p>
+            </div>
+            <div className="flex flex-wrap mt-10 justify-center">
+              <div className="m-3">
+                <a
+                  href={"/product"}
+                  title="Quicktoolz On Facebook"
+                  className="md:w-32 bg-white tracking-wide text-gray-800 font-bold rounded border-2 border-blue-600 hover:border-blue-600 hover:bg-blue-600 hover:text-white shadow-md py-2 px-6 inline-flex items-center"
+                >
+                  <span className="mx-auto">Product</span>
+                </a>
+              </div>
+              <div className="m-3">
+                <a
+                  href="#"
+                  title="Quicktoolz On Twitter"
+                  className="md:w-32 bg-white tracking-wide text-gray-800 font-bold rounded border-2 border-blue-500 hover:border-blue-500 hover:bg-blue-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center"
+                >
+                  <span className="mx-auto">User</span>
+                </a>
+              </div>
+              <div className="m-3">
+                <a
+                  href="#"
+                  title="Quicktoolz On Pinterest"
+                  className="md:w-32 bg-white tracking-wide text-gray-800 font-bold rounded border-2 border-red-600 hover:border-red-600 hover:bg-red-600 hover:text-white shadow-md py-2 px-6 inline-flex items-center"
+                >
+                  <span className="mx-auto">Customer</span>
+                </a>
+              </div>
+              <div className="m-3">
+                <a
+                  href={"/employee"}
+                  title="Quicktoolz On Facebook"
+                  className="md:w-32 bg-white tracking-wide text-gray-800 font-bold rounded border-2 border-orange-500 hover:border-orange-500 hover:bg-orange-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center"
+                >
+                  <span className="mx-auto">Employee</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
